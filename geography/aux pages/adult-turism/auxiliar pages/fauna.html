@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Caesar Dressing' rel='stylesheet'>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+        }
+
+        h1 {
+            font-size: 70px;
+            font-family: 'Caesar Dressing';
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            user-select: none;
+            transition: 0.6s ease;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 40px auto;
+            max-width: 1000px;
+            gap: 20px;
+        }
+
+        .text-box {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .image-box {
+            flex: 1;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            border: 2px solid white;
+        }
+
+        .container-facts {
+            text-align: center;
+        }
+
+        .container-facts ul {
+            display: inline-block;
+            text-align: left;
+        }
+        .button-menu {
+            width: 50px;
+            height: 50px;
+            background-color: orangered;
+            position: fixed;
+            background-size: cover;
+            border-radius: 50%;
+            color: white;
+            border-right-width: 5px;
+        }
+
+        .button-menu:hover {
+            cursor: pointer;
+            border-bottom-color: rgb(167, 46, 2);
+            border-top-color: rgb(246, 144, 107);
+            border-right-color: rgba(190, 51, 1, 0.707);
+            border-right-width: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Fauna</h1>
+    </center>
+<a href="../../../index.html"><button class="button-menu">↩</button></a>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="https://www.fishsurfing.com/cdn/fspw-ro-images/22778/22e1c02c.webp">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://gdb.rferl.org/04230000-0aff-0242-db02-08dab0ff847f_cx0_cy8_cw0_w1080_h608.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/RO_SJ_Raul_Somes_la_Letca_%282%29.JPG">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="section">
+        <div class="text-box">
+            <h2>Fauna râului Barcău</h2>
+            <p>Râul Barcău adăpostește o faună acvatică variată, adaptată la cursurile sale lente și zonele mlăștinoase. Printre speciile comune se numără cleanul, carasul, roșioara și bibanul. În zonele mai adânci pot fi întâlniți somni și crap. Malurile sunt frecventate de stârci, rațe sălbatice și vidre. Vegetația riverană oferă adăpost pentru amfibieni precum broasca verde și tritonul.</p>
+        </div>
+        <div class="image-box" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Falco_vespertinus_3_%28Martin_Mecnarowski%29.jpg/500px-Falco_vespertinus_3_%28Martin_Mecnarowski%29.jpg');"></div>
+    </div>
+
+    <div class="section">
+        <div class="text-box">
+            <h2>Fauna râului Agrij </h2>
+            <p>Râul Agrij, cu un curs mai scurt și rapid, este populat de specii adaptate la ape curate și oxigenate. Păstrăvul indigen este una dintre vedetele râului, alături de zglăvoacă și lipan. În zonele umbroase, pot fi observate broaște râioase, salamandre și insecte acvatice precum libelulele. Malurile sunt frecventate de păsări precum codobatura albă și mierla.</p>
+        </div>
+        <div class="image-box" style="background-image: url('https://gdb.rferl.org/04230000-0aff-0242-db02-08dab0ff847f_cx0_cy8_cw0_w1080_h608.jpg');"></div>
+    </div>
+
+    <div class="section">
+        <div class="text-box">
+            <h2>Fauna râului Someș </h2>
+            <p>Râul Someș, unul dintre cele mai mari din nord-vestul României, are o faună extrem de diversă. În apele sale trăiesc somni, șalăi, știuci, plătici și morunași. Zonele mlăștinoase adăpostesc broaște, țestoase de apă și vidre. Pe maluri pot fi observate stârci cenușii, egrete și pescăruși. În pădurile riverane trăiesc vulpi, bursuci și căprioare.</p>
+        </div>
+        <div class="image-box" style="background-image: url('https://monitorulcj.ro/documente/stories//2021/01/21/rata-sulitar.jpg');"></div>
+    </div>
+
+    <center>
+        <h2>Fun facts despre râurile din Sălaj</h2>
+    </center>
+    <div class="container-facts">
+        <ul>
+            <li>Barcăul are zone de izvor bine conservate, ideale pentru amfibieni.</li>
+            <li>Agrijul este preferat de păstrăvi și libelule datorită apei oxigenate.</li>
+            <li>Someșul susține o biodiversitate impresionantă, inclusiv mamifere și păsări rare.</li>
+            <li>Vidrele pot fi întâlnite pe toate cele trei râuri.</li>
+            <li>Toate cele trei ecosisteme sunt sensibile la poluare și intervenții umane.</li>
+        </ul>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Caesar Dressing' rel='stylesheet'>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+            width: 100%;
+            height: 100vh;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+
+        h1 {
+            font-size: 70px;
+            font-family: 'Caesar Dressing';
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+
+        .container_text {
+            width: 700px;
+            height: 200px;
+            overflow: inherit;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 40px auto;
+            max-width: 1000px;
+            gap: 20px;
+        }
+
+        .section .text-box {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .section .image-box {
+            flex: 1;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            border: 2px solid white;
+        }
+
+        .container-facts {
+            text-align: center;
+        }
+
+        .container-facts ul {
+            display: inline-block;
+            text-align: left;
+        }
+        .button-menu {
+            width: 50px;
+            height: 50px;
+            background-color: orangered;
+            position: fixed;
+            background-size: cover;
+            border-radius: 50%;
+            color: white;
+            border-right-width: 5px;
+        }
+
+        .button-menu:hover {
+            cursor: pointer;
+            border-bottom-color: rgb(167, 46, 2);
+            border-top-color: rgb(246, 144, 107);
+            border-right-color: rgba(190, 51, 1, 0.707);
+            border-right-width: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Casa Iuliu Maniu</h1>
+    </center>
+    <a href="../../../index.html"><button class="button-menu">↩</button></a>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/RO_SJ_Casa_memoriala_Iuliu_Maniu_din_Badacin_%2810%29.jpg">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://ghidulmuzeelor.cimec.ro/P/Ghid/6964510_01.jpg">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img
+                src="https://media-cdn.tripadvisor.com/media/photo-s/19/c9/1c/15/casa-memoriala-iuliu.jpg">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div class="section">
+        <div class="text-box">
+            <h2>Date Istorice</h2>
+            <p>Casa Memorială Iuliu Maniu din Bădăcin, județul Sălaj, este locul unde s-a născut și a copilărit marele
+                om politic român. Construită în stil tradițional, casa păstrează obiecte personale, documente și
+                fotografii care ilustrează viața și activitatea lui Maniu, lider al PNȚ și simbol al democrației
+                interbelice.</p>
+        </div>
+        <div class="image-box"
+            style="background-image: url('https://www.egco.ro/wp-content/uploads/2019/09/70502795_1328159717360109_6298310462861737984_o-1024x640.jpg');">
+        </div>
+    </div>
+    <div class="section">
+        <div class="text-box">
+            <h2>Activități pentru copii și adulți – explorare și joacă</h2>
+            <p>Copiii pot descoperi istoria prin jocuri educative și povești despre viața lui Iuliu Maniu. Adulții pot
+                participa la tururi ghidate, pot vizita expozițiile tematice și pot lua parte la dezbateri sau
+                conferințe organizate periodic.</p>
+        </div>
+        <div class="image-box"
+            style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/19/c9/1c/14/casa-memoriala-iuliu.jpg');">
+        </div>
+    </div>
+    <div class="section">
+        <div class="text-box">
+            <h2>Activități pentru copii și adulți – evenimente și relaxare</h2>
+            <p>Casa găzduiește evenimente culturale, lansări de carte și comemorări. Vizitatorii pot medita în grădina
+                liniștită, pot admira arhitectura casei și pot reflecta asupra valorilor promovate de Maniu: democrație,
+                moralitate și patriotism.</p>
+        </div>
+        <div class="image-box"
+            style="background-image: url('https://iuliumaniu.com/wp-content/uploads/2020/06/72389620_1003960266603057_3967258426572013568_n-1-768x513-2.jpg');">
+        </div>
+    </div>
+    <div class="section">
+        <div class="text-box">
+            <h2>Date geografice despre Porolissum</h2>
+            <p>Casa se află în satul Bădăcin, județul Sălaj, într-o zonă pitorească de dealuri. Este situată la
+                aproximativ 10 km de orașul Șimleu Silvaniei. Coordonatele sunt aproximativ 47°13′N și 22°48′E.</p>
+        </div>
+        <div class="image-box"
+            style="background-image: url('https://vasilegogea.wordpress.com/wp-content/uploads/2019/09/casa_maniu.jpg?w=584&h=439');">
+        </div>
+    </div>
+
+
+    <center>
+        <h2>5 fun facts</h2>
+    </center>
+    <div class="container-facts">
+        <ul>
+            <li>Casa a fost restaurată cu sprijinul comunității.
+            </li>
+            <li>Iuliu Maniu a fost închis la Sighet, unde a murit în 1953..</li>
+            <li>Casa are o bibliotecă cu volume rare.</li>
+            <li>Se organizează tabere de educație civică.</li>
+            <li>Locul este inclus în traseul turistic „Drumul lui Maniu”.</li>
+        </ul>
+
+    </div>
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+body {
+    background-color: rgb(211, 204, 204);
+}
+
+.map-container {
+    position: center;
+    width: auto;
+    height: 500px;;
+}
+
+img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+.porolissum {
+    display: flex;
+    position: absolute;
+    margin-top: -450px;
+    margin-left: 690px;
+    width: 4%;
+    height: 8%;
+    background-color:transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color:black;
+    font-size: 50px;
+}
+
+.porolissum:hover {
+    transform: scale(1.2);
+}
+
+.casa_memoriala_ilmaniu {
+    display: flex;
+    position: absolute;
+    margin-top: -490px;
+    margin-left: 530px;
+    width: 4%;
+    height: 8%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color:black;
+    font-size: 50px;
+}
+
+.casa_memoriala_ilmaniu:hover {
+    transform: scale(1.2);
+}
+
+.muz_istorie_jd {
+    display: flex;
+    position: absolute;
+    margin-top: -440px;
+    margin-left: 615px;
+    width: 4%;
+    height: 8%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color:black;
+    font-size: 50px;
+}
+
+.muz_istorie_jd:hover {
+    transform: scale(1.2);
+}
+
+.gr_zmeilor{
+    display: flex;
+    position: absolute;
+    margin-top: -480px;
+    margin-left: 900px;
+    width: 4%;
+    height: 8%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color:black;
+    font-size: 50px;
+}
+.gr_zmeilor:hover {
+    transform: scale(1.2);
+}
+
+.jb_gradina{
+    display: flex;
+    position: absolute;
+    margin-top: -500px;
+    margin-left: 770px;
+    width: 4%;
+    height: 8%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color:black;
+    font-size: 50px;
+}
+.jb_gradina:hover {
+    transform: scale(1.2);
+}
+.mihai_viteazu_monument{
+    display: flex;
+    position: absolute;
+    margin-top: -550px;
+    margin-left: 580px;
+    width: 4%;
+    height: 8%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color:black;
+    font-size: 50px;
+}
+.mihai_viteazu_monument:hover {
+    transform: scale(1.2);
+}
+.apa_curgatoare_somes{
+    display: flex;
+    position: absolute;
+    margin-top: -540px;
+    margin-left: 950px;
+    width: 4%;
+    height: 8%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.apa_curgatoare_somes:hover {
+    transform: scale(1.2);
+}
+.apa_curgatoare_barcau{
+    display: flex;
+    position: absolute;
+    margin-top: -480px;
+    margin-left: 360px;
+    width: 4%;
+    height: 8%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.apa_curgatoare_barcau:hover {
+    transform: scale(1.2);
+}
+.apa_curgatoare_agrij{
+    display: flex;
+    position: absolute;
+    margin-top: -430px;
+    margin-left: 750px;
+    width: 4%;
+    height: 8%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.apa_curgatoare_agrij:hover {
+    transform: scale(1.2);
+}
+.icon-fish{
+    text-align: center;
+    font-size: 50px;
+    color:black;
+}
+
+.container-facts {
+            text-align: center;
+        }
+
+        .container-facts ul {
+            display: inline-block;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+
+    

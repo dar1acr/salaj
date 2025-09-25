@@ -1,0 +1,67 @@
+.upper_info{
+    height: 100vh;
+    width:100%;
+    background-image: url("../img/img6.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+.titlul{
+    color:white;
+    text-align: center;
+    font-family: 'M PLUS Code Latin';
+    font-size: 50px;
+    z-index:1;
+}
+.titlul-2{
+    color:white;
+    font-family: 'Caesar Dressing';
+    text-align: center;
+    font-size: 85px;
+    z-index:1;
+}
+/*partea de copii unde vor fi jocuri */
+
+.line{
+    width: auto;
+    height:25px;
+    background-color: white;
+    color:red;
+    font-size: 20px;
+    text-align: center;
+    
+}
+.porolissum-info-kids{
+    height: 100vh;
+    width:100%;
+    background-image: url("../img/img1.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+.jb_gradina-info-kids{
+    height: 100vh;
+    width:100%;
+    background-image: url("../img/img2.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+.gr_zmeilor-info-kids{
+    height: 100vh;
+    width:100%;
+    background-image: url("../img/img3.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+.somes-info-kids{
+    height: 100vh;
+    width:100%;
+    background-image: url("../img/somes.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+.casa_memoriala_ilmaniu-info-kids{
+    height: 100vh;
+    width:100%;
+    background-image: url("../img/img4.jpg");
+    background-size: cover;
+    overflow: hidden;
+}

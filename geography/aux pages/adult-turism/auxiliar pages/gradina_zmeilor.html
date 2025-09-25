@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Caesar Dressing' rel='stylesheet'>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        h1 {
+            font-size: 70px;
+            font-family: 'Caesar Dressing';
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 40px auto;
+            max-width: 1000px;
+            gap: 20px;
+        }
+
+        .section .text-box {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .section .image-box {
+            flex: 1;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            border: 2px solid white;
+        }
+
+        .container-facts {
+            text-align: center;
+        }
+
+        .container-facts ul {
+            display: inline-block;
+            text-align: left;
+        }
+        .button-menu {
+            width: 50px;
+            height: 50px;
+            background-color: orangered;
+            position: fixed;
+            background-size: cover;
+            border-radius: 50%;
+            color: white;
+            border-right-width: 5px;
+        }
+
+        .button-menu:hover {
+            cursor: pointer;
+            border-bottom-color: rgb(167, 46, 2);
+            border-top-color: rgb(246, 144, 107);
+            border-right-color: rgba(190, 51, 1, 0.707);
+            border-right-width: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Gradina Zmeilor</h1>
+    </center>
+    <a href="../../../index.html"><button class="button-menu">↩</button></a>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/RO_SJ_Natural_Reserve_Gradina_Zmeilor%2C_Galgau_Almasului.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://locuridinromania.ro/wp-content/uploads/2016/11/Gradina-Zmeilor-din-comuna-Balan-flickr.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://cdn.g4media.ro/wp-content/uploads/2020/07/Gradina-Zmeilor-sursa-Turism-Zalau-640x381.jpg">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="section">
+        <div class="text-box">
+            <h2>Date Istorice</h2>
+            <p>Grădina Zmeilor este o rezervație naturală unică, situată în județul Sălaj, cunoscută pentru formațiunile
+                stâncoase spectaculoase care au inspirat legende locale. A fost declarată arie protejată în 1970 și
+                atrage vizitatori prin peisajul său neobișnuit și misterios.</p>
+        </div>
+        <div class="image-box" style="background-image: url('https://locuridinromania.ro/wp-content/uploads/2024/06/Gradina-Zmeilor-4.jpg');"></div>
+    </div>
+
+    <div class="section">
+        <div class="text-box">
+            <h2>Explorare și joacă</h2>
+            <p>Copiii pot descoperi formațiunile cu nume fantastice precum „Fata Cătanii” sau „Zmeul”, iar adulții pot
+                face drumeții ușoare prin pădure și pot admira priveliștea panoramică. Locul este ideal pentru
+                fotografii și povești în aer liber.</p>
+        </div>
+        <div class="image-box" style="background-image: url('https://www.gazetanord-vest.ro/wp-content/uploads/2017/07/gradina-5.jpg');"></div>
+    </div>
+
+    <div class="section">
+        <div class="text-box">
+            <h2>Evenimente și relaxare</h2>
+            <p>Zona este frecvent vizitată pentru picnicuri, activități de ecoturism și evenimente culturale locale.
+                Traseele sunt accesibile și oferă o experiență liniștitoare în mijlocul naturii, cu aer curat și
+                liniște.</p>
+        </div>
+        <div class="image-box" style="background-image: url('https://i2.wp.com/cartitaplimbareata.ro/wp-content/uploads/Gradina_Zmeilor_Galgau_Almasului_Salaj_cartitaplimbareata.ro_002.jpg');"></div>
+    </div>
+
+    <div class="section">
+        <div class="text-box">
+            <h2>Date geografice</h2>
+            <p>Grădina Zmeilor se află în apropierea satului Gălgău Almașului, în Munții Meseș. Coordonatele aproximative
+                sunt 47°08′N și 23°15′E. Rezervația se întinde pe o suprafață de aproximativ 3 hectare și oferă un
+                peisaj carstic spectaculos.</p>
+        </div>
+        <div class="image-box" style="background-image: url('https://7minuni-transilvania.ro/app/wt/assets/images/2014-11-09%2015-49-59.jpg?v=1511330868');"></div>
+    </div>
+
+    <center>
+        <h2>5 fun facts</h2>
+    </center>
+    <div class="container-facts">
+        <ul>
+            <li>Stâncile au fost modelate de eroziune timp de mii de ani.</li>
+            <li>Legenda spune că zmeii s-au pietrificat aici după o luptă epică.</li>
+            <li>Rezervația este inclusă în rețeaua Natura 2000.</li>
+            <li>Este unul dintre cele mai fotografiate locuri din Sălaj.</li>
+            <li>Accesul este gratuit și traseul este semnalizat pentru vizitatori.</li>
+        </ul>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>

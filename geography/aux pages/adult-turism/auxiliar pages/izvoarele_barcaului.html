@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Caesar Dressing' rel='stylesheet'>
+    <style>
+        /* Stiluri identice cu cele folosite anterior */
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+            width: 100%;
+            height: 100vh;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+
+        h1 {
+            font-size: 70px;
+            font-family: 'Caesar Dressing';
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+
+        .section {
+            display: flex;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 40px auto;
+            align-items: center;
+        }
+
+        .text-box {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .image-box {
+            flex: 1;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            border: 2px solid white;
+        }
+
+        .container-facts {
+            text-align: center;
+        }
+
+        .container-facts ul {
+            display: inline-block;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Muzeul de Istorie și Artă</h1>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Muzeu_zalau.jpg/1200px-Muzeu_zalau.jpg">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://planiada.ro/www/uploads/630/73.Muzeul_de_Istorie_i_Art_._Galeria_de_art_Ioan_Sima_3.jpg">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://muzeuzalau.ro/wp-content/gallery/Muzeu-vechi/Muzeu-vechi-1.JPG">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div class="section">
+        <div class="text-box">
+            <h2>Date istorice</h2>
+            <p>Muzeul Județean din Zalău a fost înființat în 1951 și este găzduit într-o clădire din secolul XIX.
+                Colecțiile sale acoperă epoci istorice diverse, iar muzeul este activ în cercetări arheologice, inclusiv
+                la Porolissum.</p>
+        </div>
+        <div class="image-box" style="background-image: url('https://ghidulmuzeelor.cimec.ro/P/Ghid/6964500_01.jpg');">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="text-box">
+            <h2>Educație și explorare </h2>
+            <p>Copiii pot participa la ateliere și jocuri de rol istorice, iar adulții pot explora expozițiile și
+                participa la escape room cultural. O experiență captivantă pentru întreaga familie.</p>
+        </div>
+        <div class="image-box"
+            style="background-image: url('https://scontent.fomr1-1.fna.fbcdn.net/v/t39.30808-6/550357729_1397616409032343_1287207013552386406_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=tK0APm_aNRwQ7kNvwF3ksXy&_nc_oc=AdkLpQ51mMxyMM1oP66ic5h7eITPrzG84w7gT6JQ13f1Z8fVzVcWO8UKTgIen_iaiUGXlcDMLuXtNeR_IWmopLTr&_nc_zt=23&_nc_ht=scontent.fomr1-1.fna&_nc_gid=9yU5leugUoL_zYKFwJLisQ&oh=00_AfY_ogJECy-Ka7TvAxKsU6Ie40bwf_aN3mEs1OI90zWjIQ&oe=68DA2A4A');">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="text-box">
+            <h2>Evenimente și relaxare </h2>
+            <p>Muzeul organizează vernisaje, lansări de carte și expoziții de artă contemporană. Vizitatorii pot savura
+                atmosfera în cafeneaua culturală sau participa la tururi tematice.</p>
+        </div>
+        <div class="image-box"
+            style="background-image: url('https://planiada.ro/www/uploads/630/73.Muzeul_de_Istorie_i_Art_._Galeria_de_art_Ioan_Sima_3.jpg');">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="text-box">
+            <h2>Date geografice 🗺️</h2>
+            <p>Situat pe strada Unirii nr. 9, în centrul Zalăului, muzeul este înconjurat de spații verzi și se află
+                aproape de Parcul Central și Biserica Reformată.</p>
+        </div>
+        <div class="image-box"
+            style="background-image: url('https://vatra-mcp.ro/wp-content/uploads/2022/06/Muzeul-Judetean-de-Istorie-si-Arta.-Galeria-de-Arta-Ioan-Sima-4.jpg');">
+        </div>
+    </div>
+
+    <div class="container-facts">
+        <h2>5 fun facts</h2>
+        <ul>
+            <li>Barcăul traversează trei județe: Sălaj, Bihor și Hajdú-Bihar (Ungaria).</li>
+            <li>Izvoarele sunt accesibile din localitatea Plopiș.</li>
+            <li>Zona este habitat pentru cerbi, vulpi și păsări de pădure..</li>
+            <li>Apa este potabilă și extrem de pură.</li>
+            <li>Râul are o lungime totală de peste 134 km.</li>
+        </ul>
+    </div>
+</body>
+
+</html>

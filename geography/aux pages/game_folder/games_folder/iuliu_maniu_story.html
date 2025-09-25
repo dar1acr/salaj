@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 700px;
+  margin: 50px auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.slide {
+  display: none;
+  text-align: center;
+}
+
+.slide.active {
+  display: block;
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="slideshow-container">
+    <div class="slide active">
+      <h2>Iuliu Maniu – Lider istoric</h2>
+      <p>Unul dintre cei mai importanți oameni politici ai României interbelice, lider al Partidului Național Țărănesc.</p>
+    </div>
+    <div class="slide">
+      <h2>Rolul în Unirea din 1918</h2>
+      <p>A fost un susținător fervent al unirii Transilvaniei cu România, participând activ la Marea Adunare de la Alba Iulia.</p>
+    </div>
+    <div class="slide">
+      <h2Prim-ministru al României</h2>
+      <p>A ocupat funcția de prim-ministru în mai multe rânduri, promovând reforme democratice și sociale.</p>
+    </div>
+    <div class="slide">
+      <h2>Opoziția față de regimul comunist</h2>
+      <p>După al Doilea Război Mondial, s-a opus instaurării regimului comunist, fapt ce a dus la arestarea sa.</p>
+    </div>
+    <div class="slide">
+      <h2Moștenirea lui Maniu</h2>
+      <p>Este considerat un simbol al democrației și al luptei pentru libertate în România. A murit în închisoarea de la Sighet.</p>
+    </div>
+
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove('active');
+    if (i === index) {
+      slide.classList.add('active');
+    }
+  });
+}
+
+function changeSlide(direction) {
+  currentSlide += direction;
+  if (currentSlide < 0) currentSlide = slides.length - 1;
+  if (currentSlide >= slides.length) currentSlide = 0;
+  showSlide(currentSlide);
+}
+
+// Inițializare
+showSlide(currentSlide);
+
+  </script>
+</body>
+</html>
